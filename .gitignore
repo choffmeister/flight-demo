@@ -1,0 +1,7 @@
+# NPM and Bower target
+node_modules/
+bower_components/
+
+# OS specific trash
+.DS_Store
+Thumbs.db
