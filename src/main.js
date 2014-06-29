@@ -7,7 +7,9 @@ requirejs.config({
   }
 });
 
-require(['jquery', 'flight/debug', 'es5shim/es5-shim', 'es5shim/es5-sham'], function ($, debug) {
+require(['jquery', 'flight/debug', './clickable', 'es5shim/es5-shim', 'es5shim/es5-sham'], function ($, debug, clickable) {
   debug.enable(true);
   console.log('Started');
+
+  clickable.attachTo('h1');
 });
