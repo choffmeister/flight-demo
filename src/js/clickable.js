@@ -4,7 +4,7 @@ define(['jquery', 'flight/component'], function ($, defineComponent) {
   function clickable() {
     this.toggleColor = function () {
       this.$node.toggleClass('colored');
-    }
+    };
 
     this.after('initialize', function () {
       this.on('click', this.toggleColor);
