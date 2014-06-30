@@ -14,5 +14,5 @@ require([
   "es5shim/es5-sham"
 ], ($, debug, test) ->
   debug.enable(true)
-  test.attachTo(document)
+  test.attachTo("div")
 )
