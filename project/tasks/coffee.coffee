@@ -9,7 +9,9 @@ uglify = require("gulp-uglify")
 
 gulp.task "coffee", ->
   gulp.src(config.src + "coffee/**/*.coffee")
-    .pipe(coffee({ bare: true }))
+    .pipe(coffee(
+      bare: true
+    ))
     .on("error", (err) ->
       gutil.log(err)
       gutil.beep()
