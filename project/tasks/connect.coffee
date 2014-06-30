@@ -2,7 +2,6 @@ gulp = require("gulp")
 config = require("../config")
 connect = require("connect")
 rewrite = require("connect-modrewrite")
-livereload = require("gulp-livereload")
 
 gulp.task "connect", (next) ->
   connect()

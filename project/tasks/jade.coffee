@@ -9,4 +9,4 @@ gulp.task "jade", ->
       pretty: config.debug
     ))
     .pipe(gulp.dest(config.dest))
-    .pipe(livereload())
+    .pipe(livereload({ auto: false }))

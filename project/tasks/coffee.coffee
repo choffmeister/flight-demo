@@ -11,4 +11,4 @@ gulp.task "coffee", ->
     .pipe(coffee({ bare: true }))
     .pipe(gif(not config.debug, uglify()))
     .pipe(gulp.dest(config.dest))
-    .pipe(livereload())
+    .pipe(livereload({ auto: false }))
