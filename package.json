@@ -16,6 +16,7 @@
     "gulp-livereload": "^2.1.0",
     "gulp-rename": "^1.2.0",
     "gulp-uglify": "^0.3.0",
+    "gulp-util": "^2.2.19",
     "yargs": "^1.2.1"
   }
 }

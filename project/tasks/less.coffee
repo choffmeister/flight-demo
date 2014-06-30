@@ -1,4 +1,5 @@
 gulp = require("gulp")
+gutil = require("gulp-util")
 config = require("../config")
 livereload = require("gulp-livereload")
 rename = require("gulp-rename")
@@ -9,6 +10,11 @@ gulp.task "less", ->
     .pipe(less(
       compress: not config.debug
     ))
+    .on("error", (err) ->
+      gutil.log(err.message)
+      gutil.beep()
+      this.end()
+    )
     .pipe(rename("style.css"))
     .pipe(gulp.dest(config.dest))
     .pipe(livereload({ auto: false }))
