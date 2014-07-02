@@ -5,6 +5,9 @@ target/
 node_modules/
 bower_components/
 
+# IDEA
+.idea/
+
 # OS specific trash
 .DS_Store
 Thumbs.db
